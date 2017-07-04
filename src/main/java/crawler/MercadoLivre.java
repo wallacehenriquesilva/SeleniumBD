@@ -3,6 +3,7 @@ package crawler;
 import controller.ProdutoController;
 import model.ProdutoModel;
 import navegador.BrowserDriver;
+import operacoes.Operacoes;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -36,62 +37,25 @@ public class MercadoLivre {
     public void search(BrowserDriver browserDriver, String pesquisa) {
         int qtd = 0;
         try {
-            System.out.println("Pesquisando dados");
+            System.out.println("Pesquisando dados...");
             browserDriver.getBrowser().get(URL_MERCADO_LIVRE + pesquisa);
 
-            //Pega o elemento que contem a quantidade total
             //Regex dos numeros
             Integer numeroResultados = apenasNumeros(browserDriver);
-                  /*  Optional.ofNullable(browserDriver.getBrowser().findElement(By.xpath(RESULT_QTD)))
-                    .map(WebElement::getText)
-                    .map(NUMERO_ITENS::matcher)
-                    .filter(Matcher::find)
-                    .map(Matcher::group)
-                    .map(Integer::valueOf)
-                    .orElse(0);*/
 
 
-
-            /*//Regex apenas do numero
-            Matcher matcher = NUMERO_ITENS.matcher(e.getText().toString());
-            if (matcher.find()) {
-
-                qtd = Integer.parseInt(matcher.group(1));
-            }*/
             System.out.println("Quantidade " + numeroResultados);
 
 
             int paginas = numeroResultados / 48;
             int n = 1;
-            ArrayList<ProdutoModel> listProduto = new ArrayList<>();
+
             insereBD(browserDriver, paginas, pesquisa, n);
 
-           /* ///System.out.println("Tamanho da lista " + listElementos.size());
-            for (int i = 0; i <= paginas; i++) {
-                browserDriver.getBrowser().get(URL_MERCADO_LIVRE + pesquisa + "_Desde_" + n);
-                try {
-                    List<WebElement> listElementos = browserDriver.getBrowser().findElements(By.xpath(ITENS));
-
-                    listElementos.stream()
-                            .map(this::createProduto)
-                            .forEach(produtoController::incluir);
-
-                } catch (Exception ex) {
-                    System.out.println("ERRO AO INSERIR --> " + ex);
-                }
-
-                n += 48;
-            }*/
-
-            //Exibe todos os dados da lista, usando o toString @Override
-            listProduto.forEach(System.out::println);
-
-            IntSummaryStatistics stats = listProduto.stream().mapToInt(ProdutoModel::getProPreco).summaryStatistics();
-            System.out.println("Maior valor " +  stats.getMax());
-
         } catch (Exception e) {
-
+            System.out.println("Erro ao pesquisar dados --> " + e);
         }
+
     }
 
     private ProdutoModel createProduto(WebElement webElement) {
@@ -103,7 +67,7 @@ public class MercadoLivre {
         return model;
     }
 
-    private int apenasNumeros(BrowserDriver browserDriver){
+    private int apenasNumeros(BrowserDriver browserDriver) {
         return Optional.ofNullable(browserDriver.getBrowser().findElement(By.xpath(RESULT_QTD)))
                 .map(WebElement::getText)
                 .map(NUMERO_ITENS::matcher)
@@ -113,7 +77,7 @@ public class MercadoLivre {
                 .orElse(0);
     }
 
-    private void insereBD(BrowserDriver browserDriver, int paginas, String pesquisa, int n){
+    private void insereBD(BrowserDriver browserDriver, int paginas, String pesquisa, int n) {
         ///System.out.println("Tamanho da lista " + listElementos.size());
         for (int i = 0; i <= paginas; i++) {
             browserDriver.getBrowser().get(URL_MERCADO_LIVRE + pesquisa + "_Desde_" + n);
@@ -131,7 +95,6 @@ public class MercadoLivre {
             n += 48;
         }
     }
-
 
 
 }

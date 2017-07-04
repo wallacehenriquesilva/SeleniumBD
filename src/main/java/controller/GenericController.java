@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public interface GenericController<T> {
     public void incluir(T obj);
     public abstract void alterar(T obj);
-    public ArrayList<T> consultar(String filtro);
-    public void excluir(T obj);
+    public ArrayList<T> consultar(String condicao);
+    public void excluir(int id);
+    public ArrayList<T> get();
 }

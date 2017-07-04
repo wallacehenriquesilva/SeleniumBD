@@ -22,13 +22,18 @@ public class ProdutoController implements GenericController<ProdutoModel> {
     }
 
     @Override
-    public ArrayList<ProdutoModel> consultar(String filtro) {
-        return null;
+    public ArrayList<ProdutoModel> consultar(String condicao) {
+        return produtoDao.consultar(condicao);
     }
 
     @Override
-    public void excluir(ProdutoModel obj) {
-        produtoDao.incluir(obj);
+    public void excluir(int id) {
+        produtoDao.excluir(id);
+    }
+
+    @Override
+    public ArrayList<ProdutoModel> get() {
+        return produtoDao.get();
     }
 
 }
