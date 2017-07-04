@@ -1,6 +1,5 @@
 package dao.querys;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 /**
  * Created by FINCH-WALLACE on 04/07/2017.

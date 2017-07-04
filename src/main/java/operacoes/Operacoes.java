@@ -14,9 +14,11 @@ import java.util.Scanner;
 public class Operacoes {
     Scanner scan = new Scanner(System.in);
     int op = 0;
-    String condicao=null;
+    String condicao = null;
+    ProdutoModel produtoModel;
 
     public void menu() {
+        produtoModel = new ProdutoModel();
         montaMenu();
     }
 
@@ -59,11 +61,21 @@ public class Operacoes {
                         exibeLista(listProduto);
                         break;
                     case 4:
+                        System.out.println("Digite o id do produto que será alterado");
+                        produtoModel.setProId(Integer.parseInt(scan.nextLine()));
+                        System.out.println("----------------------------------------");
+                        System.out.println("Digite o valor: ");
+                        produtoModel.setProPreco(Integer.parseInt(scan.nextLine()));
+                        System.out.println("Digite a descrição: ");
+                        produtoModel.setProDesc(scan.nextLine());
+                        produtoController.alterar(produtoModel);
+                        montaMenu();
                         break;
                     case 5:
                         System.out.println("Digite o id do produto que será excluido");
                         op = Integer.parseInt(scan.nextLine());
                         produtoController.excluir(op);
+                        montaMenu();
                         break;
 
                     default:

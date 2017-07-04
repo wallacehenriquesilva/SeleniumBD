@@ -65,7 +65,7 @@ public class ProdutoDao implements GenericDao<ProdutoModel> {
             //Adicionar o valor do segundo parâmetro da sql
             pstm.setString(2, obj.getProDesc());
 
-            pstm.setInt(4, obj.getProId());
+            pstm.setInt(3, obj.getProId());
 
             //Executa a sql para inserção dos dados
             pstm.execute();

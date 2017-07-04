@@ -14,8 +14,6 @@ import java.util.ArrayList;
 public class App {
 
     public static void main(String args[]) {
-        //BrowserDriver browser = new BrowserDriver();
-
         System.out.println("---------------------");
         System.out.println("-- Selenium com BD --");
         System.out.println("---------------------");
@@ -23,12 +21,12 @@ public class App {
         ConexaoBD.getConexao();
         System.out.println(ConexaoBD.getStatus());
 
-        /*MercadoLivre ml = new MercadoLivre();
-        ml.search(browser, "tv-plasma");
-        System.out.println("---------------------");*/
-
         Operacoes operacoes = new Operacoes();
         operacoes.menu();
+
+        System.out.println("_______________");
+        System.out.println("__ Finalizou __");
+        System.out.println("_______________");
 
 
     }

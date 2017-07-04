@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44d6fc12-76b9-47be-a39d-299cb8933b5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/GenericController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/GenericController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/crawler/MercadoLivre.java" afterPath="$PROJECT_DIR$/src/main/java/crawler/MercadoLivre.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/GenericDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/GenericDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/ProdutoDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/ProdutoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/querys/SQLQuerys.java" afterPath="$PROJECT_DIR$/src/main/java/dao/querys/SQLQuerys.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/App.java" afterPath="$PROJECT_DIR$/src/main/java/main/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/ProdutoModel.java" afterPath="$PROJECT_DIR$/src/main/java/model/ProdutoModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/operacoes/Operacoes.java" afterPath="$PROJECT_DIR$/src/main/java/operacoes/Operacoes.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="52" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="27" selection-end-column="52" />
+            <state relative-caret-position="290">
+              <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,33 +41,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operacoes.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Operacoes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/operacoes/Operacoes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+            <state relative-caret-position="170">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Operacoes#0" expanded="false" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProdutoDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ProdutoDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="93" column="53" lean-forward="false" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="53" />
-              <folding>
-                <element signature="method#incluir#0;class#ProdutoDao#0" expanded="false" />
-                <element signature="method#alterar#0;class#ProdutoDao#0" expanded="false" />
-                <element signature="method#consultar#0;class#ProdutoDao#0" expanded="false" />
-                <element signature="e#3031#3045#0" expanded="true" />
-                <element signature="method#get#0;class#ProdutoDao#0" expanded="false" />
-                <element signature="e#4920#4934#0" expanded="true" />
-                <element signature="method#excluir#0;class#ProdutoDao#0" expanded="false" />
+                <element signature="method#menu#0;class#Operacoes#0" expanded="false" />
+                <element signature="method#exibeLista#0;class#Operacoes#0" expanded="false" />
+                <element signature="method#montaMenu#0;class#Operacoes#0" expanded="false" />
+                <element signature="method#testaCondicao#0;class#Operacoes#0" expanded="false" />
+                <element signature="method#populaLista#0;class#Operacoes#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -110,12 +90,12 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/GenericController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/ProdutoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/GenericDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/querys/SQLQuerys.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/ProdutoModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ProdutoDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/crawler/MercadoLivre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/querys/SQLQuerys.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ProdutoDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/operacoes/Operacoes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/App.java" />
       </list>
     </option>
   </component>
@@ -290,6 +270,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeleniumBD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SeleniumBD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="querys" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -576,6 +586,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -587,7 +598,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49099836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13584287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -612,15 +623,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/operacoes/Operacoes.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -866,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/querys/SQLQuerys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="81" lean-forward="false" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/ProdutoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -898,16 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="52" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="27" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crawler/MercadoLivre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -924,11 +909,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/ProdutoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="93" column="53" lean-forward="false" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="53" />
+        <state relative-caret-position="272">
+          <caret line="69" column="51" lean-forward="true" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
           <folding>
             <element signature="method#incluir#0;class#ProdutoDao#0" expanded="false" />
-            <element signature="method#alterar#0;class#ProdutoDao#0" expanded="false" />
             <element signature="method#consultar#0;class#ProdutoDao#0" expanded="false" />
             <element signature="e#3031#3045#0" expanded="true" />
             <element signature="method#get#0;class#ProdutoDao#0" expanded="false" />
@@ -938,14 +922,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/querys/SQLQuerys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="101" lean-forward="true" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/operacoes/Operacoes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        <state relative-caret-position="170">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Operacoes#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
+            <element signature="method#menu#0;class#Operacoes#0" expanded="false" />
+            <element signature="method#exibeLista#0;class#Operacoes#0" expanded="false" />
+            <element signature="method#montaMenu#0;class#Operacoes#0" expanded="false" />
+            <element signature="method#testaCondicao#0;class#Operacoes#0" expanded="false" />
+            <element signature="method#populaLista#0;class#Operacoes#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
