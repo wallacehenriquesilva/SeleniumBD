@@ -51,7 +51,7 @@ public class ConexaoBD {
             //Não conseguindo se conectar ao banco
             System.out.println("Nao foi possivel conectar ao Banco de Dados.\n"
             + e);
-            return null;
+            return connection; //
         }
 
     }

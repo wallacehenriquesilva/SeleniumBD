@@ -1,12 +1,9 @@
 package main;
 
 import conexao.ConexaoBD;
-import crawler.MercadoLivre;
-import model.ProdutoModel;
-import navegador.BrowserDriver;
 import operacoes.Operacoes;
 
-import java.util.ArrayList;
+
 
 /**
  * Created by FINCH-WALLACE on 03/07/2017.

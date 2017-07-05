@@ -22,13 +22,13 @@ public class MercadoLivre {
     private static final Pattern NUMERO_ITENS = Pattern.compile("(\\d+)");
 
     //CONSTANSTES
-    public static final String URL_MERCADO_LIVRE = "http://lista.mercadolivre.com.br/";
+    private static final String URL_MERCADO_LIVRE = "http://lista.mercadolivre.com.br/";
 
     //XPATH
-    public static final String RESULT_QTD = "//div[@id='inner-main']/aside[@class='filters grid']/div[@class='quantity-results']";
-    public static final String ITENS = "//ol[@id='searchResults']/li/div/a/div[@class='item__info ']";
-    public static final String ITEM_VALOR = "./div[@class='item__price ']/span[@class='price-fraction']";
-    public static final String ITEM_DESCRICAO = "./h2/span[@class='main-title']";
+    private static final String RESULT_QTD = "//div[@id='inner-main']/aside[@class='filters grid']/div[@class='quantity-results']";
+    private static final String ITENS = "//ol[@id='searchResults']/li/div/a/div[@class='item__info ']";
+    private static final String ITEM_VALOR = "./div[@class='item__price ']/span[@class='price-fraction']";
+    private static final String ITEM_DESCRICAO = "./h2/span[@class='main-title']";
 
     //int qtd = 0;
 

@@ -1,19 +1,24 @@
 package dao;
 
 import conexao.ConexaoBD;
-import dao.querys.SQLQuerys;
 import model.ProdutoModel;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by FINCH-WALLACE on 03/07/2017.
  */
 public class ProdutoDao implements GenericDao<ProdutoModel> {
+
+    private static final String INSERT = "INSERT INTO PRODUTO(PRO_VALOR, PRO_DESCRICAO) VALUES(?,?)";
+    private static final String DELETE = "DELETE FROM PRODUTO WHERE PRO_ID = ?";
+    private static final String UPDATE = "UPDATE PRODUTO SET PRO_VALOR = ?, PRO_DESCRICAO = ? WHERE PRO_ID = ?";
+    private static final String SELECT = "SELECT * FROM PRODUTO";
+    private static final String SELECT_CONSULTA = "SELECT * FROM PRODUTO WHERE PRO_VALOR = ?";
+
     public void incluir(ProdutoModel obj) {
         Connection conn = null;
         PreparedStatement pstm = null;
@@ -21,7 +26,7 @@ public class ProdutoDao implements GenericDao<ProdutoModel> {
             //Cria uma conexão com o banco
             conn = ConexaoBD.getConexao();
             //Cria um PreparedStatment, classe usada para executar a query
-            pstm = conn.prepareStatement(SQLQuerys.INSERT);
+            pstm = conn.prepareStatement(INSERT);
             //Adiciona o valor do primeiro parâmetro da sql
             pstm.setString(1, String.valueOf(obj.getProPreco()));
             //Adicionar o valor do segundo parâmetro da sql
@@ -58,7 +63,7 @@ public class ProdutoDao implements GenericDao<ProdutoModel> {
             conn = ConexaoBD.getConexao();
 
             //Cria um PreparedStatment, classe usada para executar a query
-            pstm = conn.prepareStatement(SQLQuerys.UPDATE);
+            pstm = conn.prepareStatement(UPDATE);
 
             //Adiciona o valor do primeiro parâmetro da sql
             pstm.setString(1, String.valueOf(obj.getProPreco()));
@@ -102,7 +107,7 @@ public class ProdutoDao implements GenericDao<ProdutoModel> {
         try {
             conn = ConexaoBD.getConexao();
 
-            pstm = conn.prepareStatement(SQLQuerys.SELECT_CONSULTA);
+            pstm = conn.prepareStatement(SELECT_CONSULTA);
             //Condição de pesquisa por preço
             pstm.setString(1, String.valueOf(condicao));
 
@@ -164,7 +169,7 @@ public class ProdutoDao implements GenericDao<ProdutoModel> {
         try {
             conn = ConexaoBD.getConexao();
 
-            pstm = conn.prepareStatement(SQLQuerys.SELECT);
+            pstm = conn.prepareStatement(SELECT);
 
             rset = pstm.executeQuery();
 
@@ -220,7 +225,7 @@ public class ProdutoDao implements GenericDao<ProdutoModel> {
         try {
             conn = ConexaoBD.getConexao();
 
-            pstm = conn.prepareStatement(SQLQuerys.DELETE);
+            pstm = conn.prepareStatement(DELETE);
 
             pstm.setInt(1, id);
 
